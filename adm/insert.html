@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../styles/style.css">  
+</head>
+<body>
+    <div class="grid place-items-center">
+
+    <form action="showFoodItems.php" method="post" class="space-y-4 sm:w-[400px] border p-4 m-4" enctype="multipart/form-data">
+        <h2 class="text-center capitalize font-bold text-2xl">upload food item</h2>
+        <div class="f-inp-content">
+            <label for="f-image" class="capitalize block mb-2  font-medium text-gray-900 dark:text-gray-300">Food Image</label>
+            <input type="file" name="f-image" id="f-image" class="block w-full text-sm text-slate-500
+            file:mr-4 file:py-2 file:px-4
+            file:rounded-full file:border-0
+            file:text-sm file:font-semibold
+            file:bg-violet-50 file:text-violet-700
+            hover:file:bg-violet-100"/>
+          </div>
+        <div class="f-inp-content">
+          <label for="f-name" class="capitalize block mb-2  font-medium text-gray-900 dark:text-gray-300">Food Name</label>
+          <input type="text" name="f-name" id="f-name" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        </div>
+        <div class="f-inp-content">
+          <label for="f-price" class="capitalize block mb-2  font-medium text-gray-900 dark:text-gray-300">Price</label>
+          <input type="number" name="f-price" id="f-price" class="[&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [&_::-ms-clear]:appearance-none [&_::-ms-reveal]:appearance-none bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        </div>
+        <div class="f-inp-content">
+          <label for="f-ingredients" class="capitalize block mb-2  font-medium text-gray-900 dark:text-gray-300">Ingredients</label>
+          <textarea name="f-ingredients" id="f-ingredients" rows="6" class="resize-none bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"></textarea>
+        </div>
+        <div class="f-inp-content">
+          <label for="f-details" class="capitalize block mb-2  font-medium text-gray-900 dark:text-gray-300">Food Details</label>
+          <textarea name="f-details" id="f-details" rows="6" class="resize-none bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"></textarea>
+        </div>
+        <div class="f-inp-content">
+          <label for="f-quantity" class="capitalize block mb-2  font-medium text-gray-900 dark:text-gray-300">Quantity</label>
+          <input type="number" name="f-quantity" id="f-quantity" class="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        </div>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+      </form>
+    </div>
+</body>
+</html>

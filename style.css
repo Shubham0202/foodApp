@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Menu styles */
+.menu {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.menu-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-item::before {
+    content: attr(data-text);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    color: #ff9900;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+/* Hero styles */
+.hero {
+    height: 80vh;
+    background-image: url("assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.order-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff9900;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Services styles */
+.services {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.service-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Service card styles */
+.service-card {
+    cursor: pointer;
+    width: 300px;
+    margin: 20px;
+    padding: 2rem 20px 20px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.service-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
