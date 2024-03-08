@@ -66,12 +66,11 @@ $conn->close();
         <!-- ingredients -->
         <div class="ingredients">
             <h3 class="food-details-title font-semibold text-xl">Ingredients</h3>
-            <div class="flex items-center my-2">
-                <!-- Split the ingredients string into an array and display each one -->
-                <?php
+            <div class="flex items-center my-2 flex-nowrap">
+             <?php
                 $ingredients = explode(',', $food_item['fingredients']);
                 foreach ($ingredients as $ingredient) {
-                    echo "<span class='block mr-2 text-hoverBg bg-secondaryHoverBg rounded-full px-4 py-2 rounded-full'>" . htmlspecialchars(trim($ingredient)) . "</span>";
+                    echo "<span class='block whitespace-nowrap mr-2 text-hoverBg bg-secondaryHoverBg rounded-full px-4 py-2 rounded-full'>" . htmlspecialchars(trim($ingredient)) . "</span>";
                 }
                 ?>
             </div>
@@ -83,7 +82,7 @@ $conn->close();
                 <input type="number" value="1" />
             </div>
             <!-- use single buy product -->
-            <a href="requstsuccess.html" class="palce-order-container capitalize py-3 px-6 rounded-full bg-hoverBg my-2 w-fit block transition ">order for $<?php echo htmlspecialchars($food_item['fprice']); ?></a>
+            <a href="requstsuccess.html" class="palce-order-container capitalize py-3 px-6 rounded-full bg-hoverBg my-2 w-fit block transition ">order for ₹<?php echo htmlspecialchars($food_item['fprice']); ?></a>
         </div>
     </div>
 </div>

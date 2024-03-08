@@ -47,7 +47,7 @@
                 <p class="max-w-[550px] text-gray-800 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis velit debitis iste libero consequatur provident optio ducimus sapiente rerum!</p>
                 <h3 class="product-price font-bold italic text-2xl">₹200</h3>
                 <div class="buttons my-3 flex items-center gap-4">
-                  <a href="#" class="capitalize px-8 text-white py-3 rounded-full bg-hoverBg block w-fit">buy now</a>
+                  <a href="#seecategories" class="capitalize px-8 text-white py-3 rounded-full bg-hoverBg block w-fit">select category</a>
                   <a href="#" class="capitalize px-8 py-3 rounded-full text-buttonBg border-2 border-hoverBg block w-fit hover:text-black hover:border-black transition">see menu</a>
                 </div>
 
@@ -56,86 +56,28 @@
                 <img src="assets/hero.jpg" class="rounded-lg w-96 h-96" alt="">
             </div>
         </div>
-        <!-- top rating products -->
-        <div class="all-categories px-14 flex items-center gap-8 mt-4">
-
-          <a href="#" class="flex items-center gap-2 bg-glassWhite shadow p-4 rounded-lg">
-            <div class="food-info">
-              <h3 class="food-title line-clamp-1 font-semibold text-lg capitalize">Mango pickles</h3>
-              <p>at first</p>
-              <p class="food-price font-semibold text-lg">₹250</p>
-            </div>
-            <div class="img-container-and-cart">
-              <img src="assets/mangoLeaf.jpg" class="w-24 h-24 object-cover rounded-full" alt="">
-              <div class="capitalize flex items-center gap-2">
-                <p class="text-gray-600">2.5k</p>
-                <p class="reviews">reviews</p>
-                <div class="stars-container">
-                  <i data-feather="star" class="text-yellow-500"></i>
-                </div>
-              
-              </div>
-            </div>
-          </a>
-          <a href="#" class="flex items-center gap-2 bg-glassWhite shadow p-4 rounded-lg">
-            <div class="food-info">
-              <h3 class="food-title line-clamp-1 font-semibold text-lg capitalize">Mango pickles</h3>
-              <p>at first</p>
-              <p class="food-price font-semibold text-lg">₹250</p>
-            </div>
-            <div class="img-container-and-cart">
-              <img src="assets/mangoLeaf.jpg" class="w-24 h-24 object-cover rounded-full" alt="">
-              <div class="capitalize flex items-center gap-2">
-                <p class="text-gray-600">2.5k</p>
-                <p class="reviews">reviews</p>
-                <div class="stars-container">
-                  <i data-feather="star" class="text-yellow-500"></i>
-                </div>
-              
-              </div>
-            </div>
-          </a>
-          <a href="#" class="flex items-center gap-2 bg-glassWhite shadow p-4 rounded-lg">
-            <div class="food-info">
-              <h3 class="food-title line-clamp-1 font-semibold text-lg capitalize">Mango pickles</h3>
-              <p>at first</p>
-              <p class="food-price font-semibold text-lg">₹250</p>
-            </div>
-            <div class="img-container-and-cart">
-              <img src="assets/mangoLeaf.jpg" class="w-24 h-24 object-cover rounded-full" alt="">
-              <div class="capitalize flex items-center gap-2">
-                <p class="text-gray-600">2.5k</p>
-                <p class="reviews">reviews</p>
-                <div class="stars-container">
-                  <i data-feather="star" class="text-yellow-500"></i>
-                </div>
-              
-              </div>
-            </div>
-          </a>
-          <a href="#" class="flex items-center gap-2 bg-glassWhite shadow p-4 rounded-lg">
-            <div class="food-info">
-              <h3 class="food-title line-clamp-1 font-semibold text-lg capitalize">Mango pickles</h3>
-              <p>at first</p>
-              <p class="food-price font-semibold text-lg">₹250</p>
-            </div>
-            <div class="img-container-and-cart">
-              <img src="assets/mangoLeaf.jpg" class="w-24 h-24 object-cover rounded-full" alt="">
-              <div class="capitalize flex items-center gap-2">
-                <p class="text-gray-600">2.5k</p>
-                <p class="reviews">reviews</p>
-                <div class="stars-container">
-                  <i data-feather="star" class="text-yellow-500"></i>
-                </div>
-              
-              </div>
-            </div>
-          </a>
-
-        </div>
-    </header>
+    
+       </header>
     <main class="py-4">
-      <!-- why choose our food -->
+      <!-- plans -->
+      <div class="plans border py-4" id="seecategories">
+      <h2 class="text-xl px-8 font-bold capitalize">
+              focus <span class="uppercase text-gray-600">categories</span> <i data-feather="chevron-right" class="inline w-8 h-8 relative bottom-1"></i>
+      </h2>
+      <div class="plans-card py-4 flex items-center justify-center gap-8">
+        <a href="#" class="plan-card skew-y-12 hover:skew-y-0 transition-all duration-500 bg-[url(assets/categories/wedding.jpg)] bg-center bg-no-repeat bg-cover w-96 h-[450px] px-8 relative rounded-lg">
+          <h3 class="handwritting font-bold w-full text-center py-12 capitalize text-2xl absolute bottom-0 left-0 rounded-lg text-white">wedding food</h3>
+        </a>  
+        <a href="#" class="plan-card skew-y-12 hover:skew-y-0 transition-all duration-500 bg-[url(assets/categories/home.jpg)] bg-center bg-no-repeat bg-cover w-96 h-[450px] px-8 relative rounded-lg">
+          <h3 class="handwritting font-bold w-full text-center py-12 capitalize text-2xl absolute bottom-0 left-0 rounded-lg text-white">home food</h3>
+        </a>  
+        <a href="#" class="plan-card skew-y-12 hover:skew-y-0 transition-all duration-500 bg-[url(assets/categories/birthday.jpg)] bg-center bg-no-repeat bg-cover w-96 h-[450px] px-8 relative rounded-lg">
+        <h3 class="handwritting font-bold w-full text-center py-12 capitalize text-2xl absolute bottom-0 left-0 rounded-lg text-white">birthday party food</h3>
+        </a>  
+       
+      </div>
+      </div>
+        <!-- why choose our food -->
       <div class="py-4">
         <h2 class="text-3xl font-bold capitalize text-center">why choose our food</h2>
 
@@ -171,7 +113,7 @@
         <div class="bg-gray-100 py-4">
           <div class="title-section flex items-center justify-between px-8">
             <h2 class="text-xl font-bold capitalize">
-              what we <span class="uppercase text-gray-600">surve</span>
+              sample <span class="uppercase text-gray-600">food</span>
             </h2>
             <div class="flex items-center gap-8">
               <p
@@ -203,14 +145,14 @@ if ($result->num_rows > 0) {
     // Output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<div class='card bg-white rounded-md pb-4'>";
-        echo "<a href='buyPage.php?fid=" . $row['fid'] . "' class='overflow-hidden block'>";
+        echo "<a href='buyPage.php?fid=" . $row['fid'] . "' class='overflow-hidden block hover:rounded-t-md'>";
         echo "<img class='object-cover w-full h-60 rounded-t-md transition-all duration-500 hover:scale-150' src='" . $row['fimage'] . "' alt='" . htmlspecialchars($row['fname']) . "' />";
         echo "</a>";
         echo "<div class='card-info px-4 mt-2'>";
         echo "<h2 class='card-title capitalize font-semibold text-lg line-clamp-1'>" . htmlspecialchars($row['fname']) . "</h2>";
         echo "<p class='text-gray-600 line-clamp-2 mb-2'>" . htmlspecialchars($row['fdetails']) . "</p>";
         echo "<div class='add-to-cart flex items-center justify-between'>";
-        echo "<h3 class='price capitalize'> <span class='font-bold text-lg'>$" . $row['fprice'] . "</span></h3>";
+        echo "<h3 class='price capitalize'> <span class='font-bold text-lg'>₹" . $row['fprice'] . "</span></h3>";
         echo "<a href='buyPage.php?fid=" . $row['fid'] . "' class='add-into-cart capitalize py-2 px-4 outline outline-3 outline-transparent hover:outline-hoverBg transition-all duration-500 border-[3px] border-transparent hover:border-white bg-hoverBg rounded-lg'>order now</a>";
         echo "</div>";
         echo "</div>";
